@@ -5,7 +5,7 @@
 to install and run
 
 ```shell
-git clone 
+git clone https://github.com/17med/password_calcul.git
 cd password_calcul
 python main.py
 
