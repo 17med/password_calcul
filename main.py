@@ -8,8 +8,8 @@ win=ctk.CTk()
 win.geometry("600x300")
 win.resizable(False,False)
 win.title("password verif")
-p1 = tkinter.PhotoImage(file = 's.png')
-win.iconphoto(False, p1)
+img = tkinter.PhotoImage(file = 's.png')
+win.iconphoto(False, img)
 sc = ctk.CTkProgressBar(win ,width=400, height=20)
 sc.place(x=115,y=170)
 c=False
@@ -30,14 +30,14 @@ v4.place(x=100, y=200)
 
 
 
-tt2=ctk.CTkLabel(master=win,text="",text_color="#404040",font=("normal",40))
-tt2.place(x=300,y=220,anchor="center")
-tt=ctk.CTkLabel(master=win,text="",text_color="#404040",font=("normal",25))
-tt.place(x=300,y=83,anchor="center") 
+tt2=ctk.CTkLabel(master=win,text="by 17med_achour",text_color="white",font=("normal",20))
+tt2.place(x=510,y=280,anchor="center")
+tt=ctk.CTkLabel(master=win,text="",text_color="#404040",font=("normal",35))
+tt.place(x=300,y=73,anchor="center") 
 def callback(var):
     global sc
     verif(psw.get(),[v1,v2,v3,v4])
-    vals(sc,tt2,tt,psw,[v1,v2,v3,v4])
+    vals(sc,tt,psw,[v1,v2,v3,v4])
     pass
     
    
@@ -60,6 +60,6 @@ bt1.place(x=410, y=100)
 bt1.configure(command=lambda :bt1.configure(text=showorhide(inp)))
 # create CTk scrollbar
 
-change(sc,tt2,0)
+change(sc,tt,0)
 
 win.mainloop()

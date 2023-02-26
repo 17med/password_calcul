@@ -44,7 +44,7 @@ def showorhide(m):
     else:
         m.configure(show="*")
         return "show"
-def vals(sc,x,x2,m,l):
+def vals(sc,x2,m,l):
     if(m.get()!=""):
         verif(m.get(),l)
         c=time(m.get())
@@ -55,7 +55,7 @@ def vals(sc,x,x2,m,l):
     else:
         
         x2.configure(text="")
-        x.configure(text="")
+        
         change(sc,x2,0)
 def change(sc,x2,nb):
 
@@ -64,13 +64,13 @@ def change(sc,x2,nb):
         x2.configure(text="")
         sc.configure(progress_color="#4c4c54")
     elif(nb<0.4):
-        x2.configure(text="bad")
+        x2.configure(text="bad",text_color="red")
         sc.configure(progress_color="red")
     elif(nb>=0.4 and nb<=0.6):
-        x2.configure(text="ehhh good")
+        x2.configure(text="ehhh good",text_color="yellow")
         sc.configure(progress_color="yellow")
     else:
-        x2.configure(text="strong")
+        x2.configure(text="strong",text_color="green")
         sc.configure(progress_color="green")
 
 import math
