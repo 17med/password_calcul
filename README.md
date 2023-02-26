@@ -2,9 +2,11 @@
 
 <center><img src="p2.png"></img></center>
 <p align="center">Check how secure your password is using a free offline tool.</p>
-
+to install and run
 
 ```shell
+git clone 
+cd password_calcul
 python main.py
 
 ```
