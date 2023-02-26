@@ -1,4 +1,4 @@
-# passowrd verif
+<h1 style="text-align: center;">passowrd verif</h1>
 
 <center width=100% ><img width=600 height=300 src="s.png"></img></center>
 
