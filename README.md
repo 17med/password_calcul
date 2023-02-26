@@ -1,2 +1,6 @@
 # password_calcul
-Check how secure your password is using our free online tool. How long would it take a supercomputer to crack your password?
+Check how secure your password is using a free offline tool.
+<img src="s.png"></img>
+```shell
+python main.py
+```
