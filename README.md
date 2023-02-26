@@ -1,11 +1,17 @@
 <h1 style="text-align: center;">passowrd verif</h1>
 
-<p align="center"><img width=600 height=300 src="a1.gif"></img></p>
-
-Check how secure your password is using a free offline tool.
 <center><img src="p2.png"></img></center>
+<p align="center">Check how secure your password is using a free offline tool.</p>
+
 
 ```shell
 python main.py
 
 ```
+
+<p align="center"><img width=600 height=300 src="a1.gif"></img></p>
+
+
+
+
+
