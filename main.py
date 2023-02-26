@@ -1,5 +1,6 @@
 import customtkinter as ctk
 import tkinter
+from tkinter import PhotoImage
 from element import window
 from func import reset,showorhide,change,vals,verif
 ctk.set_default_color_theme("dark-blue")
@@ -8,8 +9,7 @@ win=ctk.CTk()
 win.geometry("600x300")
 win.resizable(False,False)
 win.title("password verif")
-img = tkinter.PhotoImage(file = 's.png')
-win.iconphoto(False, img)
+win.iconbitmap("r.ico")
 sc = ctk.CTkProgressBar(win ,width=400, height=20)
 sc.place(x=115,y=170)
 c=False
@@ -30,7 +30,7 @@ v4.place(x=100, y=200)
 
 
 
-tt2=ctk.CTkLabel(master=win,text="by 17med_achour",text_color="white",font=("normal",20))
+tt2=ctk.CTkLabel(master=win,text="by 17med_achour",text_color="grey",font=("normal",20))
 tt2.place(x=510,y=280,anchor="center")
 tt=ctk.CTkLabel(master=win,text="",text_color="#404040",font=("normal",35))
 tt.place(x=300,y=73,anchor="center") 
